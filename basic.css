@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: #333;
+    width: 100%;
+    height: 90px;
+}
+nav label{
+    display:inline-flex;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 0 0 70px;
+    font-weight: bold;
+}
+
+nav ul {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    display:inline-flex;
+    margin-left: 50%;
+    flex-wrap: wrap;
+    line-height: 80px;
+    padding-right: 30px;
+    gap: 0px 25px;
+
+}
