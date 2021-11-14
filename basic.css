@@ -7,15 +7,21 @@
 }
 body{
     font-family: sans-serif;
+    background: url(./showcase.jpg);
+    background-color: rgba(75, 75, 75, 0.1);
+    background-size: cover;
+    height: calc(100vh - 80px);
 }
 
 nav{
     background-color: #333;
     width: 100%;
     height: 90px;
+    display: flex;
+    justify-content: space-between;
 }
+
 nav label{
-    display:inline-flex;
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -25,13 +31,135 @@ nav label{
 
 nav ul {
     color: white;
-    background-color: red;
     font-size: 20px;
     display:inline-flex;
-    margin-left: 50%;
-    flex-wrap: wrap;
-    line-height: 80px;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    line-height: 90px;
     padding-right: 30px;
-    gap: 0px 25px;
+    gap: 0px 17px;
+}
+nav ul a{
+    padding: 5px 8px;
+    color: white;
+    border-radius: 10px;
+}
+.active{
+    background-color:#93CB52 ;
+    transition: .5s;
+}
+.ACTIVE:hover{
+    background-color: #93CB52;
 
 }
+/* Create responsive section here */
+
+h1{
+    color: white;
+    font-size: 71px;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 200px;
+}
+p{ 
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    margin-top: 17px;
+    margin-bottom: 25px;
+}
+.Read{
+    color: white;
+    font-size: 20px;
+    margin-left: 570px;
+    background-color: #93CB52;
+    padding: 8px 20px;
+    border-radius: 7px;
+}
+.Read:hover{
+    background-color: #8db85c;
+}
+/* Create responsive section here */
+.NAV-2{
+    margin-top: 336px;
+    background-color:white;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+}
+.MAIN-DIV{
+    display:flex;
+    justify-content: center;  
+}
+
+.DIV-2{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.WHAT{
+    color: #93CB52;
+}
+.WE-DO{
+    color: #333;
+}
+.WHAT-WE-DO{
+    font-size: 35px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.fa-university{
+    background-color: #93CB52;
+    margin-top: 118px;
+    margin-left: -20px;
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+h3{
+    margin-left: 60px;
+    margin-top: -80px;
+
+}
+.P-1{
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.fa-book-reader{
+    background-color: #93CB52;
+    margin-top: 118px;
+    margin-left: -20px;
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+.H3-2{
+    margin-left: 60px;
+    margin-top: -80px;
+}
+.P-2{
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.fa-pencil-alt{
+    background-color: #93CB52;
+    margin-top: 118px;
+    margin-left: -20px;
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+.H3-3{
+    margin-left: 60px;
+    margin-top: -80px;   
+}
+.P-3{
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    margin-left: 60px;
+}
+
