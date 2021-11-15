@@ -9,6 +9,7 @@ body{
     font-family: sans-serif;
     background: url(./showcase.jpg);
     background-color: rgba(75, 75, 75, 0.1);
+    background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
 }
@@ -80,17 +81,19 @@ p{
     background-color: #8db85c;
 }
 /* Create responsive section here */
-.NAV-2{
+.WHAT-WE-DO-SECTION{
     margin-top: 336px;
     background-color:white;
     width: 100%;
     height: 270px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .MAIN-DIV{
     display:flex;
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: -45px;
 }
 
 .DIV-2{
@@ -104,10 +107,13 @@ p{
 .WE-DO{
     color: #333;
 }
-.WHAT-WE-DO{
+.WHAT-WE-DO-HEADING{
+    display: flex;
+    justify-content: center;
     font-size: 35px;
     margin-bottom: 0%;
     padding-bottom: 0%;
+    gap: 0px 13px;
 }
 
 .fa-university{
@@ -162,4 +168,78 @@ h3{
     font-size: 17px;
     margin-left: 60px;
 }
+/* Create Responsive section here */
+.WHO-WE-ARE-SECTION{
+    background-color: #333;
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+}
+.WHO-WE-ARE-IMAGE{ 
+    background: url(./people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:420px;
+    width: 608px;
+    max-width: 50%;  
+}
+.CONTENT{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.WHO-WE-ARE-HEADING{
+    font-size: 35px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#WHO{
+    color: #93CB52;
+}
+.P-OF-WHO-WE-ARE{
+    text-align: left;
+    color:white;
+    margin-left: 25px;
+    font-size: 17px;
+    
+}
+.H3-OF-CONTENT{
+    color: #fff;
+    margin-top: 0%;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.UL-OF-CONTENT{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    margin-left: 25px;
+    margin-top: 15px;
+    gap: 10px 0;
+}
+/* Create Responsive section here */
+.OUR-CLIENT-BACKGROUND{
+    background-color:white;
+    height: 270px;
+    width: 100%;
+}
+.OUR{
+    color: #93CB52;
+}
+.OUR-CLIENT-HEADING{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.OUR-CLIENT-IMAGES{
+    display:flex;
+    justify-content: center;
+    gap: 0 80px;
+}
+
 
