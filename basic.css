@@ -45,7 +45,7 @@ nav ul a{
     color: white;
     border-radius: 10px;
 }
-.active{
+#active{
     background-color:#93CB52 ;
     transition: .5s;
 }
@@ -86,7 +86,7 @@ p{
     margin-top: 17px;
     margin-bottom: 25px;
 }
-.Read{
+#Read{
     color: white;
     font-size: 20px;
     background-color: #93CB52;
@@ -96,7 +96,7 @@ p{
 #read-more{
     text-align: center;
 }
-.Read:hover{
+#Read:hover{
     background-color: #8db85c;
 }
 @media (max-width:500px){
@@ -114,7 +114,7 @@ p{
     }
 }
 /* What We Do */
-.WHAT-WE-DO-SECTION{
+#SECTION-2{
     margin-top: 336px;
     background-color:white;
     width: 100%;
@@ -123,20 +123,20 @@ p{
     justify-content: center;
     flex-direction: column;
 }
-.MAIN-DIV{
+#SECTION-2-MAIN-DIV{
     display:flex;
     justify-content: center; 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: -45px;
 }
-.WHAT-WE-DO-HEADING{
+#SECTION-2-HEADING{
     display: flex;
     justify-content: center;
     font-size: 35px;
     gap: 0px 13px;
 }
 
-.DIV-2{
+.SECTION-2-CHILD-DIV-2{
     margin-left: 70px;
     margin-right: 70px;
 }
@@ -180,24 +180,43 @@ h3{
     border-radius: 50%;
 }
 @media (max-width:500px){
-    .WHAT-WE-DO-SECTION{
+    #SECTION-2{
         margin-top: 100px;
         width: 100%;
         height: 640px;
     }
-    .WHAT-WE-DO-HEADING{
-        margin-top: -50px;
+    #SECTION-2-MAIN-DIV{
+        display: flex;
+        flex-direction: column;
     }
-    .DIV-1{
+    #SECTION-2-HEADING{
+        margin-top: 0px;
+    }
+    .SECTION-2-CHILD-DIV-1{
         margin-top: -20px;
-        margin-bottom: -45px;
+        margin-bottom: -80px;
     }
-    .DIV-2{
+    .SECTION-2-CHILD-DIV-2{
         margin-bottom: -45px;
     }
 }
+/* @media (max-width:740px){
+    #SECTION-2{
+       
+        width: 100%;
+        height: 420px;
+    }
+    #SECTION-2-HEADING{
+        margin-top: 20px;
+    }
+    .SECTION-2-CHILD-DIV-1{
+        margin-left: 9%;
+    }
+    .SECTION-2-CHILD-DIV-3{
+        margin-top: -55px;
+    } */
 /* Who We are */
-.WHO-WE-ARE-SECTION{
+#SECTION-3{
     background-color: #333;
     height: 420px;
     width: 100%;
@@ -206,7 +225,7 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.WHO-WE-ARE-IMAGE{ 
+#SECTION-3-IMAGE{ 
     background: url(./people.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,12 +234,12 @@ h3{
     max-width: 50%;
   
 }
-.CONTENT{
+#CONTENT{
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-.WHO-WE-ARE-HEADING{
+#SECTION-3-HEADING{
     font-size: 35px;
     color: white;
     margin-top: 25px;
@@ -229,20 +248,20 @@ h3{
 #WHO{
     color: #93CB52;
 }
-.P-OF-WHO-WE-ARE{
+#SECTION-3-P{
     text-align: left;
     color:white;
     margin-left: 25px;
     font-size: 17px;
     
 }
-.H3-OF-CONTENT{
+#H3-OF-CONTENT{
     color: #fff;
     margin-top: 0%;
     font-weight: bold;
     margin-left: 25px;
 }
-.UL-OF-CONTENT{
+#UL-OF-CONTENT{
     display: flex;
     flex-direction: column;
     color: white;
@@ -252,15 +271,15 @@ h3{
     gap: 10px 0;
 }
 @media (max-width:500px){
-    .WHO-WE-ARE-SECTION{
+    #SECTION-3{
         height: 500px;
     }
-    .WHO-WE-ARE-IMAGE{
-        width: 0%;
+    #SECTION-3-IMAGE{
+        display: none;
     }
 }
 /* Our Client */
-.OUR-CLIENT-BACKGROUND{
+#SECTION-4-BACKGROUND{
     background-color:white;
     height: 270px;
     width: 100%;
@@ -270,34 +289,34 @@ h3{
 .OUR{
     color: #93CB52;
 }
-.OUR-CLIENT-HEADING{
+#SECTION-4-HEADING{
     text-align: center;
     font-size: 32px;
     padding-top: 15px;
     padding-bottom: 40px;
 }
-.OUR-CLIENT-IMAGES{
+#SECTION-4-IMAGES{
     display:flex;
     justify-content: center;
     gap: 0 80px;
     flex-wrap: wrap;
 }
-@media (width:500px){
-    .OUR-CLIENT-BACKGROUND{
+@media (max-width:500px){
+    #SECTION-4-BACKGROUND{
         width: 100%;
         height: 470px;
     }
-    .OUR-CLIENT-IMAGES{
+    #SECTION-4-IMAGES{
         margin-top: -15px;
     }
 }
 /* Contact Us */
-#HEAD-OF-ALL-CONTACT{
+#SECTION-5-HEAD{
     display: flex;
     flex-direction:row;
     flex: 1;
 }
-.CONTACT-US{
+#SECTION-5-CONTACT{
     background-color: #93CB52;
     height: 460px;
     width: 35%;
@@ -306,17 +325,21 @@ h3{
     justify-content: center;
     text-align: left;
 }
-.CONTACT-US-HEADING{
+#SECTION-5-HEADING{
     color: white;
     font-size: 34px;
     margin-left: 25px;
     padding-top: 30px;
 }
-.CONTACT-US-PARA{
+#SECTION-5-PARA{
     color: white;
     font-size: 18px;
     display: flex;
     margin-left: 25px;
+}
+#SECTION-5-FORUM{
+    margin-right: 10%;
+    margin-left: 1%;
 }
 .LABEL-NAME{
     padding-left:40px;
@@ -353,9 +376,10 @@ h3{
     color: white;
     text-align: center;
     background-color: #333;
-    padding: 6px 170px;
+    padding: 6px 155px;
     border-radius: 5px;
-
+    margin-left: 10%;
+    margin-right: 1%;
 }
 .SEND:hover{
     background-color: #6d8f47;
@@ -363,17 +387,17 @@ h3{
 #SEND-DIV{
     text-align: center;
 }
-.UNLOAD-MAP{
+#UNLOAD-MAP{
     background-color: #E8EAED;
     width: 65%;
     display: flex;
     flex-shrink: 8;
 }
 @media (max-width:500px){
-    .CONTACT-US{
+    #SECTION-5-CONTACT{
         width: 100%;
     }
-    .UNLOAD-MAP{
+    #UNLOAD-MAP{
         width: 0%;
     }
 }
