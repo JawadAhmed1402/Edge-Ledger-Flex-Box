@@ -11,7 +11,7 @@ body{
     background-color: rgba(75, 75, 75, 0.1);
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(200vh - 10px);
 }
 
 nav{
@@ -53,7 +53,7 @@ nav ul a{
     background-color: #93CB52;
 
 }
-@media (max-width:500px){
+@media (max-width:500px){  
     nav{
         display: flex;
         flex-wrap: wrap;
@@ -70,7 +70,7 @@ nav ul a{
         margin-top: -42px;
         margin-left: 100px;
     }
-}
+} 
 /* Sky Is Limit */
 h1{
     color: white;
@@ -118,7 +118,7 @@ p{
     margin-top: 336px;
     background-color:white;
     width: 100%;
-    height: 270px;
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -188,40 +188,40 @@ h3{
     #SECTION-2-MAIN-DIV{
         display: flex;
         flex-direction: column;
+        margin-left: 110px;
     }
     #SECTION-2-HEADING{
-        margin-top: 0px;
+        margin-top: -40px;
+        margin-bottom: 20px;
     }
     .SECTION-2-CHILD-DIV-1{
         margin-top: -20px;
-        margin-bottom: -80px;
+        margin-bottom: -60px;
     }
     .SECTION-2-CHILD-DIV-2{
-        margin-bottom: -45px;
+        margin-bottom: -60px;
+        margin-left: -3px;
     }
 }
-/* @media (max-width:740px){
-    #SECTION-2{
-       
+@media (min-width:740px){
+    #SECTION-2{  
         width: 100%;
-        height: 420px;
+        height: 300px;
     }
     #SECTION-2-HEADING{
-        margin-top: 20px;
+        margin-top: 10px;
     }
-    .SECTION-2-CHILD-DIV-1{
-        margin-left: 9%;
-    }
+
     .SECTION-2-CHILD-DIV-3{
-        margin-top: -55px;
-    } */
+        margin-top: -5px;
+    }
+}    
 /* Who We are */
 #SECTION-3{
     background-color: #333;
     height: 420px;
     width: 100%;
     display: flex;
-
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -238,6 +238,7 @@ h3{
     display: flex;
     flex-direction: column;
     flex: 1;
+    
 }
 #SECTION-3-HEADING{
     font-size: 35px;
@@ -249,7 +250,7 @@ h3{
     color: #93CB52;
 }
 #SECTION-3-P{
-    text-align: left;
+    text-align: left;   
     color:white;
     margin-left: 25px;
     font-size: 17px;
@@ -260,6 +261,7 @@ h3{
     margin-top: 0%;
     font-weight: bold;
     margin-left: 25px;
+    margin-top: -10px;
 }
 #UL-OF-CONTENT{
     display: flex;
@@ -267,8 +269,13 @@ h3{
     color: white;
     font-size: 17px;
     margin-left: 25px;
-    margin-top: 15px;
-    gap: 10px 0;
+    margin-top: 8px;
+    gap: 2px 0;
+}
+#UL-OF-CONTENT li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+
 }
 @media (max-width:500px){
     #SECTION-3{
@@ -276,6 +283,22 @@ h3{
     }
     #SECTION-3-IMAGE{
         display: none;
+    }
+    #SECTION-3-P{
+        font-size:17px
+    }
+}
+@media (max-width:760px){
+    #SECTION-3-IMAGE{
+        display: none;
+    }
+    #SECTION-3-P{
+        font-size: 17px;
+    }
+}
+@media (max-width:1020px){
+    #SECTION-3-P{
+        font-size: 15px;
     }
 }
 /* Our Client */
@@ -310,11 +333,19 @@ h3{
         margin-top: -15px;
     }
 }
+@media (max-width:790px){
+    #SECTION-4-IMAGES{
+        display: flex;
+
+        max-width: 100%;
+        height: auto;
+    }
+
+}
 /* Contact Us */
 #SECTION-5-HEAD{
     display: flex;
     flex-direction:row;
-    flex: 1;
 }
 #SECTION-5-CONTACT{
     background-color: #93CB52;
@@ -324,6 +355,8 @@ h3{
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 #SECTION-5-HEADING{
     color: white;
@@ -333,13 +366,13 @@ h3{
 }
 #SECTION-5-PARA{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
+    flex-wrap: nowrap;
     margin-left: 25px;
 }
 #SECTION-5-FORUM{
-    margin-right: 10%;
-    margin-left: 1%;
+    width: 100%;
 }
 .LABEL-NAME{
     padding-left:40px;
@@ -347,7 +380,9 @@ h3{
 }
 
 .TEXT-AREA{
-    padding: 6px 195px 6px 0px
+    width: 90%;
+    padding-top: 6px;
+    padding-bottom: 6px;    
 }
 #Name{
     display: flex;
@@ -376,10 +411,13 @@ h3{
     color: white;
     text-align: center;
     background-color: #333;
-    padding: 6px 155px;
     border-radius: 5px;
-    margin-left: 10%;
-    margin-right: 1%;
+    padding: 0.5rem 155px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .SEND:hover{
     background-color: #6d8f47;
@@ -391,14 +429,26 @@ h3{
     background-color: #E8EAED;
     width: 65%;
     display: flex;
-    flex-shrink: 8;
+    flex-shrink: 2;
 }
 @media (max-width:500px){
+    .SECTION-5-P{
+        font-size: 12px;
+    }
     #SECTION-5-CONTACT{
         width: 100%;
     }
     #UNLOAD-MAP{
         width: 0%;
+    }
+}
+@media (max-width:768px){
+    .SEND{
+        width: 70%;
+        margin-left: 50px;
+        font-size: 13px;
+        padding: 4px 0px 4px 0px;
+        text-align: center;
     }
 }
  #FOOTER{
