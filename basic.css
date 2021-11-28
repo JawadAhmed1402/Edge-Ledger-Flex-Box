@@ -72,6 +72,9 @@ nav ul a{
     }
 } 
 /* Sky Is Limit */
+#SECTION-1{
+
+}
 h1{
     color: white;
     font-size: 71px;
@@ -129,6 +132,7 @@ p{
     justify-content: center; 
     flex-wrap: nowrap;
     margin-top: -45px;
+
 }
 #SECTION-2-HEADING{
     display: flex;
@@ -165,6 +169,8 @@ h3{
     color: black;
     font-size: 17px;
     margin-left: 60px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .fa-book-reader{
     background-color: #93CB52;
@@ -180,7 +186,7 @@ h3{
     padding: 15px 15px;
     border-radius: 50%;
 }
-@media (max-width:520px){
+@media (max-width:640px){
     #SECTION-2{
         margin-top: 100px;
         width: 100%;
@@ -190,10 +196,11 @@ h3{
     #SECTION-2-MAIN-DIV{
         display: flex;
         flex-direction: column;
-        margin-left: 110px;
+        align-items: center;
+     
     }
     #SECTION-2-HEADING{
-        margin-top: -40px;
+        margin-top: -90px;
         margin-bottom: 20px;
     }
     .SECTION-2-CHILD-DIV-1{
@@ -202,28 +209,42 @@ h3{
     }
     .SECTION-2-CHILD-DIV-2{
         margin-bottom: -60px;
-        margin-left: -3px;
     }
 }
-@media (min-width:740px){
+@media (min-width:640px){
+    #SECTION-2-HEADING{
+        margin-top: 32px;
+    }
+    /* #SECTION-2-MAIN-DIV{
+        margin-top: -75px;
+    } */
+}
+@media (min-width:760px){
     #SECTION-2{  
         width: 100%;
         height: 300px;
-        padding-left: 4%;
+        padding-left: 5%;
     }
     #SECTION-2-HEADING{
-        margin-top: 10px;
+        margin-top: 30px;
     }
-
+    #SECTION-2-MAIN-DIV{
+        padding-top: -100px;
+    }
     .SECTION-2-CHILD-DIV-3{
         margin-top: -5px;
     }
 }    
 @media (min-width:840px){
+    #SECTION-2-HEADING{
+        margin-top: 10px;
+        text-align: center;
+    }
     #SECTION-2{
         width: 100%;
         height: 280px;
     }
+
 }
 /* Who We are */
 #SECTION-3{
@@ -294,7 +315,8 @@ h3{
         display: none;
     }
     #SECTION-3-P{
-        font-size:17px
+        font-size:17px;
+        padding-bottom: 20px;
     }
 }
 @media (max-width:760px){
@@ -331,23 +353,29 @@ h3{
     display:flex;
     justify-content: center;
     gap: 0 80px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin: 0px 40px;
+}
+.LOGO{
+    width: 100%;
+    height: auto;
+    max-width: 120px;
 }
 @media (max-width:500px){
     #SECTION-4-BACKGROUND{
         width: 100%;
-        height: 470px;
+        height: 200px;
     }
     #SECTION-4-IMAGES{
-        margin-top: -15px;
+        margin-top: 10px;
+    }
+    #SECTION-4-HEADING{
+        font-size: 28px;
     }
 }
 @media (max-width:790px){
     #SECTION-4-IMAGES{
-        display: flex;
-
-        max-width: 100%;
-        height: auto;
+        display: flex; 
     }
 
 }
@@ -355,45 +383,44 @@ h3{
 #SECTION-5-HEAD{
     display: flex;
     flex-direction:row;
+    background-color: #93CB52;
 }
 #SECTION-5-CONTACT{
-    background-color: #93CB52;
     height: 460px;
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    flex-grow: 2;
-    flex-shrink: 1;
+    /* flex-grow: 2;
+    flex-shrink: 1; */
+    padding: 32px;
 }
 #SECTION-5-HEADING{
     color: white;
     font-size: 34px;
-    margin-left: 25px;
-    padding-top: 30px;
+    padding-top: 26px;
 }
 #SECTION-5-PARA{
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 25px;
 }
 #SECTION-5-FORUM{
     width: 100%;
     padding: 0.5rem;
+    margin-top: -12px;
 }
 .LABEL-NAME{
-    padding-left:40px;
     margin-bottom: 15px;
     text-align: left;
+    padding-left: 6px;
 }
 
 .TEXT-AREA{
-    width: 90%;
-    padding-top: 6px;
-    padding-bottom: 6px;   
+    width: 100%;
+    padding: 4px 0;  
     text-align: left; 
 }
 #Name{
@@ -423,13 +450,11 @@ h3{
     color: white;
     text-align: center;
     background-color: #333;
+    width: 100%;
     border-radius: 5px;
-     padding: 0.5rem 2rem;
-    /* margin-left: 5px;
-    margin-right: 5px;
-    width: 80%; 
+    padding: 0.3rem;
     display: flex;
-    justify-content: center; */ 
+    justify-content: center;
 }
 .SEND:hover{
     background-color: #6d8f47;
@@ -443,8 +468,8 @@ h3{
     display: flex;
     flex-shrink: 2;
 }
-@media (max-width:500px){
-    .SECTION-5-P{
+@media (max-width:630px){
+    #SECTION-5-PARA{
         font-size: 12px;
     }
     #SECTION-5-CONTACT{
@@ -456,11 +481,15 @@ h3{
 }
 @media (max-width:768px){
     .SEND{
-        width: 70%;
-        margin-left: 50px;
         font-size: 13px;
-        padding: 4px 0px 4px 0px;
-        text-align: center;
+    }
+    #SECTION-5-HEADING{
+        font-size: 28px;
+    }
+}
+@media (min-width:850px){
+    #SECTION-5-HEADING{
+        font-size: 34px;
     }
 }
  #FOOTER{
