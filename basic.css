@@ -7,6 +7,11 @@
 }
 body{
     font-family: sans-serif;
+    background: url(./Image/showcase.jpg);
+    background-color: rgba(75, 75, 75, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 nav{
@@ -67,16 +72,9 @@ nav ul a{
 } 
 /* Sky Is Limit */
 #SECTION-1{
-    /* padding-top: 80px; */
-
+    padding-top: 150px;
 }
 .SECTION-1-BACKGROUND{
-    background: url(./showcase.jpg);
-    background-color: rgba(75, 75, 75, 0.1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
 }
 h1{
     color: white;
@@ -256,7 +254,7 @@ h3{
     flex-wrap: wrap;
 }
 #SECTION-3-IMAGE{ 
-    background: url(./people.jpg);
+    background: url(./Image/people.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height:420px;
